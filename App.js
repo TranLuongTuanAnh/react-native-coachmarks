@@ -11,6 +11,7 @@ import {
   Text,
   View,
   Image,
+  Dimensions,
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -19,12 +20,20 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
+const { width, height } = Dimensions.get('window');
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+      <View style={styles.topChildView}>
+        <Image style={styles.topChildItem}
+          source={require('./ic_touch.png')}
+        />
+        <Image style={styles.topChildItem}
+          source={require('./ic_public.png')}
+        />
+      </View>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -35,12 +44,20 @@ export default class App extends Component<Props> {
           {instructions}
         </Text>
         <View style={styles.bottomChildView}>
-          <Image
-            source={require('/react-native/img/favicon.png')}
+          <Image style={styles.bottomChildItem}
+            source={require('./ic_laptop.png')}
           />
-          <Image
-            style={{width: 50, height: 50}}
-            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+          <Image style={styles.bottomChildItem}
+            source={require('./ic_perm_phone_msg.png')}
+          />
+          <Image style={styles.bottomChildItem}
+            source={require('./ic_person.png')}
+          />
+          <Image style={styles.bottomChildItem}
+            source={require('./ic_skip_next.png')}
+          />
+          <Image style={styles.bottomChildItem}
+            source={require('./ic_smartphone.png')}
           />
         </View>
       </View>
@@ -66,6 +83,23 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   bottomChildView: {
-
+    flexDirection: 'row',
+    top: height / 2,
+  },
+  bottomChildItem: {
+    width: 60,
+    height: 60,
+    margin: 5,
+  },
+  topChildView: {
+    flexDirection: 'row',
+    top: 70,
+    width: width,
+    justifyContent: 'flex-end',
+  },
+  topChildItem: {
+    width: 24,
+    height: 24,
+    margin: 20,
   },
 });

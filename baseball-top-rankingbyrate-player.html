@@ -1,0 +1,10 @@
+<td class="top-ranking" colspan="2">
+  <div>
+    <img width="68px" height="68px" src="https://imaginary.tmhub.jp/smartcrop?width=68&height=68&url={{if .UserProfileImage.Valid}}{{.UserProfileImage.String}} {{else}}{{"/assets/img/teamhub/person.png"}}{{end}}" class="attachment-sportspress-crop-medium size-sportspress-crop-medium wp-post-image" onError="this.onerror=null;this.style.width = '68px';
+    this.style.height = '68px'; this.src='/assets/img/teamhub/person.png';"/>
+    <a href="./members/{{.UserId}}"><span class="truncate-text baseball-top-playername">{{if .UserName}}{{.UserName}}{{else}}{{"　"}}{{end}}</span></a>
+  </div>
+</td>
+<td class="top-ranking">
+  <span class="count-stats-top baseball-count-stats-top">{{percent .Rate}}</span>
+</td>
