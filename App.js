@@ -26,14 +26,14 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-      <View style={styles.topChildView}>
-        <Image style={styles.topChildItem}
-          source={require('./ic_touch.png')}
-        />
-        <Image style={styles.topChildItem}
-          source={require('./ic_public.png')}
-        />
-      </View>
+        <View style={styles.topChildView}>
+          <Image style={styles.topChildItem}
+            source={require('./ic_touch.png')}
+          />
+          <Image style={styles.topChildItem}
+            source={require('./ic_public.png')}
+          />
+        </View>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'rgba(19,166,205,1)',
   },
   welcome: {
     fontSize: 20,
