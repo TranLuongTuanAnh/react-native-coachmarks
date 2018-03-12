@@ -14,6 +14,8 @@ import {
   Dimensions,
 } from 'react-native';
 
+import CoachMarks from './source/coachmarks'
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -56,9 +58,6 @@ export default class App extends Component<Props> {
           <Image style={styles.bottomChildItem}
             source={require('./ic_skip_next.png')}
           />
-          <Image style={styles.bottomChildItem}
-            source={require('./ic_smartphone.png')}
-          />
         </View>
       </View>
     );
@@ -69,7 +68,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: 'rgba(19,166,205,1)',
   },
   welcome: {
     fontSize: 20,
@@ -84,7 +82,7 @@ const styles = StyleSheet.create({
   },
   bottomChildView: {
     flexDirection: 'row',
-    top: height / 2,
+    top: height / 2 - 40,
   },
   bottomChildItem: {
     width: 60,
@@ -93,7 +91,7 @@ const styles = StyleSheet.create({
   },
   topChildView: {
     flexDirection: 'row',
-    top: 70,
+    top: 30,
     width: width,
     justifyContent: 'flex-end',
   },
