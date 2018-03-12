@@ -41,8 +41,6 @@ export default class CoachMarks extends Component {
   }
 
   render() {
-    const { theme } = this.props.styles;
-    const styles = createThemeStyle(theme);
 
     return (
       <Modal
@@ -157,7 +155,7 @@ export default class CoachMarks extends Component {
   }
 }
 
-const createThemeStyle = theme => StyleSheet.create({
+const styles = StyleSheet.create({
   visibleContainer: {
     flex: 1,
     alignItems: 'center',
@@ -174,20 +172,20 @@ const createThemeStyle = theme => StyleSheet.create({
     position: 'absolute',
     top: 0,
     right: 0,
-    backgroundColor: theme.coachmarksOverlay,
+    backgroundColor:'rgba(0,0,0,0.5)',
   },
   container: {
     width: 300,
     height: 320,
-    backgroundColor: theme.content,
-    borderColor: theme.coachmarksContainerBorder,
+    backgroundColor: 'rgba(0,0,0,1)',
+    borderColor: 'rgba(0,0,0,1)',
     borderRadius: 8,
     overflow: 'hidden',
     justifyContent: 'center',
     alignItems: 'center',
   },
   centeringTxt: {
-    color: theme.coachmarksText,
+    color: 'rgba(0,0,0,1)',
     textAlign: 'center',
     paddingLeft: 3,
     paddingRight: 3,
@@ -199,21 +197,21 @@ const createThemeStyle = theme => StyleSheet.create({
     height: 70,
   },
   divider: {
-    backgroundColor: theme.divider,
+    backgroundColor: 'rgba(0,0,0,1)',
     marginVertical: 16,
     width: 268,
   },
   button: {
-    backgroundColor: theme.transparent,
+    backgroundColor: 'rgba(0,0,0,0)',
   },
   buttonText: {
-    color: theme.mainColor,
+    color: 'rgba(0,0,0,1)',
   },
   skip: {
-    backgroundColor: theme.transparent,
+    backgroundColor: 'rgba(0,0,0,0)',
   },
   skipText: {
-    color: theme.coachmarksSkipText,
+    color: 'rgba(0,0,0,1)',
     fontSize: 13,
   },
 });

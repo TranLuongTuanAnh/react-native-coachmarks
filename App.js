@@ -59,9 +59,42 @@ export default class App extends Component<Props> {
             source={require('./ic_skip_next.png')}
           />
         </View>
+        {this.renderCoachMarks()}
       </View>
     );
   }
+   renderCoachMarks() {
+     const CM = [];
+     CM.push(
+      {
+        tooltip: '',
+        position: {
+          top:10,
+          left: width - 54,
+        },
+        tooltipPosition: {
+          width: 300,
+          height: 120,
+          top: 110,
+          left: (width - 300) / 2,
+        },
+        style: {
+          width: 50,
+          height: 50,
+          borderRadius: 30,
+        },
+      },
+    );
+    return (
+          <CoachMarks
+            {...this.props}
+            numberOfSteps={CM.length}
+            coachMarks={CM}
+            congratsText="congratsText"
+            visible={true}
+            onClose={() => {}}
+          />)
+   }
 }
 
 const styles = StyleSheet.create({
