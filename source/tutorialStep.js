@@ -35,9 +35,6 @@ export default class TurtorialStep extends Component {
       tooltip, visible, position, tooltipPosition, okEnable, onPressMark, endModal, isCircleMask,
     } = this.props;
 
-    const { theme } = this.props.styles;
-    const styles = createThemeStyle(theme);
-
     const firstOverlayWidth = position.left;
     const firstOverlayHeight = height;
     const firstOverlayX = 0;
@@ -165,13 +162,13 @@ export default class TurtorialStep extends Component {
   }
 }
 
-const createThemeStyle = theme => StyleSheet.create({
+const styles =  StyleSheet.create({
   coachMarks: {
     position: 'absolute',
   },
   tooltip: {
-    backgroundColor: theme.content,
-    borderColor: theme.coachmarksTooltipBorder,
+    backgroundColor: '#ffffff',
+    borderColor: 'rgba(216, 213, 212, 0.8)',
     borderRadius: 8,
     overflow: 'hidden',
     position: 'absolute',
@@ -183,7 +180,7 @@ const createThemeStyle = theme => StyleSheet.create({
     paddingTop: 16,
   },
   tooltipText: {
-    color: theme.coachmarksText,
+    color: 'rgba(0, 0, 0, 0.87)',
     textAlign: 'center',
     paddingTop: 5,
     paddingLeft: 5,
@@ -194,7 +191,7 @@ const createThemeStyle = theme => StyleSheet.create({
     height,
     top: 0,
     right: 0,
-    backgroundColor: theme.transparent,
+    backgroundColor: 'rgba(0, 0, 0, 0)',
   },
   bgContainer: {
     flex: 1,
@@ -202,20 +199,15 @@ const createThemeStyle = theme => StyleSheet.create({
     height: null,
   },
   overlay: {
-    backgroundColor: theme.coachmarksOverlay,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     position: 'absolute',
   },
-  divider: {
-    backgroundColor: theme.divider,
-    marginTop: 16,
-    width: 200,
-  },
   button: {
-    backgroundColor: theme.transparent,
+    backgroundColor: 'rgba(0, 0, 0, 0)',
     width: 150,
   },
   buttonText: {
-    color: theme.mainColor,
+    color: 'rgba(70, 165, 135, 1)',
   },
   dogImage: {
     marginVertical: 16,
@@ -225,7 +217,7 @@ const createThemeStyle = theme => StyleSheet.create({
     height: 124,
   },
   centeringTxt: {
-    color: theme.coachmarksText,
+    color: 'rgba(0, 0, 0, 0.87)',
     textAlign: 'center',
     paddingLeft: 3,
     paddingRight: 3,
@@ -240,10 +232,10 @@ const createThemeStyle = theme => StyleSheet.create({
     alignItems: 'center',
   },
   skip: {
-    backgroundColor: theme.transparent,
+    backgroundColor: 'rgba(0, 0, 0, 0)',
   },
   skipText: {
-    color: theme.coachmarksSkipText,
+    color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 13,
   },
 });
