@@ -67,10 +67,10 @@ export default class App extends Component<Props> {
      const CM = [];
      CM.push(
       {
-        tooltip: '',
+        tooltip: 'The first steps of your tutorial',
         position: {
-          top:10,
-          left: width - 54,
+          top:35,
+          left: width - 58,
         },
         tooltipPosition: {
           width: 300,
@@ -81,6 +81,42 @@ export default class App extends Component<Props> {
         style: {
           width: 50,
           height: 50,
+          borderRadius: 30,
+        },
+      },
+      {
+        tooltip: 'The second steps of your tutorial',
+        position: {
+          top:height - 60,
+          left: width - 85,
+        },
+        tooltipPosition: {
+          width: 300,
+          height: 120,
+          top: height - 200,
+          left: (width - 300) / 2,
+        },
+        style: {
+          width: 60,
+          height: 60,
+          borderRadius: 30,
+        },
+      },
+      {
+        tooltip: 'The third steps of your tutorial',
+        position: {
+          top:height - 60,
+          left: width - 155,
+        },
+        tooltipPosition: {
+          width: 300,
+          height: 120,
+          top: height - 200,
+          left: (width - 300) / 2,
+        },
+        style: {
+          width: 60,
+          height: 60,
           borderRadius: 30,
         },
       },
