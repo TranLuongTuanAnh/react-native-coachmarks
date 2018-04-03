@@ -61,6 +61,7 @@ export default class CoachMarks extends Component {
                   source={dogImg}
                 />
                 <Text style={styles.centeringTxt}>{this.props.congratsText}</Text>
+                <View style={styles.divider}/>
                 <Button title="startTutorial" onPress={() => this.startTutorial()} />
               </View>
               <View style={styles.skipScene}>
@@ -177,7 +178,7 @@ const styles = StyleSheet.create({
   container: {
     width: 300,
     height: 320,
-    backgroundColor: 'rgba(0,0,0,1)',
+    backgroundColor: 'rgba(255,255,255,1)',
     borderColor: 'rgba(0,0,0,1)',
     borderRadius: 8,
     overflow: 'hidden',
@@ -187,8 +188,8 @@ const styles = StyleSheet.create({
   centeringTxt: {
     color: 'rgba(0,0,0,1)',
     textAlign: 'center',
-    paddingLeft: 3,
-    paddingRight: 3,
+    paddingHorizontal:16,
+    paddingVertical:16,
   },
   skipScene: {
     justifyContent: 'center',
@@ -198,8 +199,9 @@ const styles = StyleSheet.create({
   },
   divider: {
     backgroundColor: 'rgba(0,0,0,1)',
-    marginVertical: 16,
+    marginBottom: 16,
     width: 268,
+    height: 1,
   },
   button: {
     backgroundColor: 'rgba(0,0,0,0)',

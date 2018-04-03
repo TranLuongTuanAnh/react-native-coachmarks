@@ -94,7 +94,7 @@ export default class TurtorialStep extends Component {
           {!endModal &&
             <View style={[styles.tooltip, tooltipPosition]}>
               <Text style={styles.tooltipText}>{tooltip}</Text>
-              {okEnable && <Button title="ok" onPress={() => this.OKButton()} />}
+              {okEnable && <Button title="OK" onPress={() => this.OKButton()} />}
             </View>
           }
           {endModal &&
@@ -104,7 +104,7 @@ export default class TurtorialStep extends Component {
                   style={[styles.dogImage, { marginVertical: 0 }]}
                   source={dogImg}
                 />
-                <Text style={[styles.centeringTxt, { marginTop: 0 }]}>{tooltip}</Text>
+                <Text style={styles.centeringTxt}>{tooltip}</Text>
               </View>
               <View style={[styles.skipScene, { top: tooltipPosition.top + tooltipPosition.height }]}>
                 <Button title="skipAction" onPress={() => this.OKButton()}/>
@@ -185,6 +185,7 @@ const styles =  StyleSheet.create({
     paddingTop: 5,
     paddingLeft: 5,
     paddingRight: 5,
+    paddingBottom: 15,
   },
   backArea: {
     width,
@@ -221,7 +222,6 @@ const styles =  StyleSheet.create({
     textAlign: 'center',
     paddingLeft: 3,
     paddingRight: 3,
-    marginTop: 16,
   },
   skipScene: {
     position: 'absolute',

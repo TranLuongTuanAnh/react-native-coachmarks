@@ -87,37 +87,73 @@ export default class App extends Component<Props> {
       {
         tooltip: 'The second steps of your tutorial',
         position: {
-          top:height - 60,
-          left: width - 85,
+          top:height - 70,
+          left: width - 91,
         },
         tooltipPosition: {
           width: 300,
           height: 120,
-          top: height - 200,
+          top: height - 210,
           left: (width - 300) / 2,
         },
         style: {
-          width: 60,
-          height: 60,
-          borderRadius: 30,
+          width: 70,
+          height: 70,
+          borderRadius: 35,
         },
       },
       {
         tooltip: 'The third steps of your tutorial',
         position: {
-          top:height - 60,
-          left: width - 155,
+          top:height - 70,
+          left: width - 160,
         },
         tooltipPosition: {
           width: 300,
           height: 120,
-          top: height - 200,
+          top: height - 210,
           left: (width - 300) / 2,
         },
         style: {
-          width: 60,
-          height: 60,
-          borderRadius: 30,
+          width: 70,
+          height: 70,
+          borderRadius: 35,
+        },
+      },
+      {
+        tooltip: 'The fourth steps of your tutorial',
+        position: {
+          top:height - 70,
+          left: width - 225,
+        },
+        tooltipPosition: {
+          width: 300,
+          height: 120,
+          top: height - 210,
+          left: (width - 300) / 2,
+        },
+        style: {
+          width: 70,
+          height: 70,
+          borderRadius: 35,
+        },
+      },
+      {
+        tooltip: 'The last steps of your tutorial',
+        position: {
+          top:height - 75,
+          left: width - 305,
+        },
+        tooltipPosition: {
+          width: 300,
+          height: 120,
+          top: height - 210,
+          left: (width - 300) / 2,
+        },
+        style: {
+          width: 80,
+          height: 80,
+          borderRadius: 40,
         },
       },
     );
@@ -126,7 +162,7 @@ export default class App extends Component<Props> {
             {...this.props}
             numberOfSteps={CM.length}
             coachMarks={CM}
-            congratsText="congratsText"
+            congratsText="congratsTextcongratsTextcongratsText\congratsTextcongratsTextcongratsTextcongratsText"
             visible={true}
             onClose={() => {}}
           />)
