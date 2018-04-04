@@ -162,7 +162,7 @@ export default class App extends Component<Props> {
             {...this.props}
             numberOfSteps={CM.length}
             coachMarks={CM}
-            congratsText="congratsTextcongratsTextcongratsText\congratsTextcongratsTextcongratsTextcongratsText"
+            congratsText={"Welcome to react-native-coachmark!\n"+"It helps you easily create Coach Marks to enhance user experience"}
             visible={true}
             onClose={() => {}}
           />)
