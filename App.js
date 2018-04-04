@@ -159,7 +159,6 @@ export default class App extends Component<Props> {
     );
     return (
           <CoachMarks
-            {...this.props}
             numberOfSteps={CM.length}
             coachMarks={CM}
             congratsText={"Welcome to react-native-coachmark!\n"+"It helps you easily create Coach Marks to enhance user experience"}
