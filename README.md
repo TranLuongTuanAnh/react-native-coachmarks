@@ -92,7 +92,7 @@
 | **congratsText**  | The text is shown in first view | None  |
 | **congratsImage**  | The image is shown in first view | None  |
 | **visible**  | CoachMarks is shown or hidden | false  |
-| **onClose**  | action is called in last step | Node  |
+| **onClose**  | action is called in last step | None  |
 
 ## Properties of each step
 
