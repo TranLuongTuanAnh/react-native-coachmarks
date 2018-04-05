@@ -19,7 +19,6 @@ import I18n from 'react-native-i18n';
 import TurtorialStep from './tutorialStep';
 
 const { width, height } = Dimensions.get('window');
-const dogImg = require('../ic_public.png');
 
 export default class CoachMarks extends Component {
   static propTypes = {
@@ -27,6 +26,7 @@ export default class CoachMarks extends Component {
     coachMarks: PropTypes.array,
     visible: PropTypes.bool,
     congratsText: PropTypes.string,
+    congratsImage: PropTypes.number,
     onClose: PropTypes.func,
   }
 
@@ -41,7 +41,7 @@ export default class CoachMarks extends Component {
   }
 
   render() {
-
+    console.log(this.props.congratsImageUri);
     return (
       <Modal
         animationType="fade"
@@ -56,13 +56,17 @@ export default class CoachMarks extends Component {
             <TouchableOpacity style={styles.backArea} activeOpacity={1} />
             <View style={styles.scene}>
               <View style={styles.container}>
-                <Image
-                  style={{ width: 150, height: 150 }}
-                  source={dogImg}
-                />
+               {this.props.congratsImage &&
+                 <Image
+                   style={{ width: 150, height: 150 }}
+                   source={this.props.congratsImage}
+                 />
+               }
                 <Text style={styles.centeringTxt}>{this.props.congratsText}</Text>
                 <View style={styles.divider}/>
-                <Button title="startTutorial" onPress={() => this.startTutorial()} />
+                <View style = {styles.button}>
+                  <Button title="startTutorial" onPress={() => this.startTutorial()} />
+                </View>
               </View>
               <View style={styles.skipScene}>
                 <Button title="skipTutorial" onPress={() => this.dismiss()} />
@@ -177,7 +181,6 @@ const styles = StyleSheet.create({
   },
   container: {
     width: 300,
-    height: 320,
     backgroundColor: 'rgba(255,255,255,1)',
     borderColor: 'rgba(0,0,0,1)',
     borderRadius: 8,
@@ -199,12 +202,12 @@ const styles = StyleSheet.create({
   },
   divider: {
     backgroundColor: 'rgba(0,0,0,1)',
-    marginBottom: 16,
     width: 268,
     height: 1,
   },
   button: {
     backgroundColor: 'rgba(0,0,0,0)',
+    paddingVertical:8,
   },
   buttonText: {
     color: 'rgba(0,0,0,1)',
