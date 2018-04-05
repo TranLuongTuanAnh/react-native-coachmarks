@@ -1,4 +1,8 @@
 # react-native-coachmasks
+## DEMO
+
+<img src="https://github.com/TranLuongTuanAnh/react-native-coachmasks/blob/master/coachmarkSimulation.gif">
+
 
 # How to use 
  ```
