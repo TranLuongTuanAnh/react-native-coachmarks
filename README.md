@@ -87,12 +87,12 @@
 
 | Prop  | Description |Default |
 | ------------- | ------------- | ------------- |
-| coachMarks  | This is array contains data of coachmasks(see Properties of each step)  |None  |
-| numberOfSteps  | number of steps  | None  |
-| congratsText  | The text is shown in first view | None  |
-| congratsImage  | The image is shown in first view | None  |
-| visible  | CoachMarks is shown or hidden | false  |
-| onClose  | action is called in last step | Node  |
+| **coachMarks**  | This is array contains data of coachmasks(see [Properties of each step](https://github.com/TranLuongTuanAnh/react-native-coachmasks/blob/master/README.md#properties-of-each-step))  |None  |
+| **numberOfSteps**  | number of steps  | None  |
+| **congratsText**  | The text is shown in first view | None  |
+| **congratsImage**  | The image is shown in first view | None  |
+| **visible**  | CoachMarks is shown or hidden | false  |
+| **onClose**  | action is called in last step | Node  |
 
 ## Properties of each step
 
@@ -119,7 +119,7 @@
 
 | Prop  | Description |Default |
 | ------------- | ------------- | ------------- |
-| tooltip  | Explain text show in this step  |None  |
-| position  | position of mask  |None  |
-| tooltipPosition  | position of tooltip  |None  |
-| style  | style of CoachMark  |None  |
+| **tooltip**  | Explain text show in this step  |None  |
+| **position**  | position of mask  |None  |
+| **tooltipPosition**  | position of tooltip  |None  |
+| **style**  | style of CoachMark  |None  |
