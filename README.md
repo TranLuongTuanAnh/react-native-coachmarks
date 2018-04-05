@@ -102,6 +102,7 @@
       numberOfSteps={CM.length}
       coachMarks={CM}
       congratsText={"Welcome to react-native-coachmark!\n"+"It helps you easily create Coach Marks to enhance user experience"}
+      congratsImage={require('./ic_public.png')}
       visible={true}
       onClose={() => {}}
     />
