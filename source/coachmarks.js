@@ -13,8 +13,6 @@ import {
 
 import PropTypes from 'prop-types';
 
-import I18n from 'react-native-i18n';
-
 
 import TurtorialStep from './tutorialStep';
 
