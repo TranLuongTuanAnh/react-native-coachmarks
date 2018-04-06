@@ -1,4 +1,5 @@
 # react-native-coachmasks
+Welcome to react-native-coachmark! It helps you easily create Coach Marks to enhance user experience!
 ## DEMO
 
 <img src="https://github.com/TranLuongTuanAnh/react-native-coachmasks/blob/master/coachmarkSimulation.gif">
