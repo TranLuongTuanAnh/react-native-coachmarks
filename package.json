@@ -10,7 +10,7 @@
     "type": "git",
    "url": "https://github.com/ashleygwilliams/my_package.git"
   },
-  "keywords": [react-native-coachmark],
+  "keywords": ["react-native-coachmark"],
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.1",
