@@ -6,6 +6,12 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+   "url": "https://github.com/ashleygwilliams/my_package.git"
+  },
+  "keywords": [react-native-coachmark],
+  "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "16.2.0",
