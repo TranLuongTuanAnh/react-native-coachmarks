@@ -127,3 +127,6 @@
 | **position**  | position of mask  |None  |
 | **tooltipPosition**  | position of tooltip  |None  |
 | **style**  | style of CoachMark  |None  |
+
+# License
+This project is licenced under the [MIT License.](https://opensource.org/licenses/mit-license.html)
