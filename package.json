@@ -1,5 +1,6 @@
 {
   "name": "react-native-coachmarks",
+  "main": "index.js",
   "version": "1.0.5",
   "private": false,
   "scripts": {

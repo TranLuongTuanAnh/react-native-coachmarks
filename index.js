@@ -1,4 +1,3 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import CoachMarks from './source/coachmarks';
 
-AppRegistry.registerComponent('CoachMarksExample', () => App);
+export default CoachMarks;
