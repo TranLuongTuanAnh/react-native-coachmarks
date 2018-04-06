@@ -5,7 +5,7 @@ Welcome to react-native-coachmark! It helps you easily create Coach Marks to enh
 ![](coachmarkSimulation.gif)
 
 # Installation
-`npm i react-native-coachmarks`
+`npm i react-native-coachmarks --save`
 
 # How to use 
  ```
