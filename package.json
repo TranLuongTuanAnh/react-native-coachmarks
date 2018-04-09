@@ -1,7 +1,7 @@
 {
   "name": "react-native-coachmarks",
   "main": "index.js",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
