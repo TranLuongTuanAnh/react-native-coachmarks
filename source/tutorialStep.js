@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { View, Text, StyleSheet, Dimensions, Image, LayoutAnimation, TouchableOpacity,Button } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
-const dogImg = require('../ic_public.png');
 
 export default class TurtorialStep extends Component {
   static propTypes = {
@@ -95,20 +94,6 @@ export default class TurtorialStep extends Component {
             <View style={[styles.tooltip, tooltipPosition]}>
               <Text style={styles.tooltipText}>{tooltip}</Text>
               {okEnable && <Button title="OK" onPress={() => this.OKButton()} />}
-            </View>
-          }
-          {endModal &&
-            <View>
-              <View style={[styles.tooltip, tooltipPosition, { paddingTop: 0 }]}>
-                <Image
-                  style={[styles.dogImage, { marginVertical: 0 }]}
-                  source={dogImg}
-                />
-                <Text style={styles.centeringTxt}>{tooltip}</Text>
-              </View>
-              <View style={[styles.skipScene, { top: tooltipPosition.top + tooltipPosition.height }]}>
-                <Button title="skipAction" onPress={() => this.OKButton()}/>
-              </View>
             </View>
           }
           {okEnable &&
