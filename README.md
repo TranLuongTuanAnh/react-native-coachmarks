@@ -132,7 +132,7 @@ Welcome to react-native-coachmarks! It helps you easily create Coach Marks to en
 | **style**  | style of CoachMark  |None  |
 
 # Example
-[rect-native-coachmarks-example](https://github.com/TranLuongTuanAnh/react-native-coachmarks/blob/master/Example/DemoCoachMark/App.js)
+[react-native-coachmarks-example](https://github.com/TranLuongTuanAnh/react-native-coachmarks/blob/master/Example/DemoCoachMark/App.js)
 
 # License
 This project is licenced under the [MIT License.](https://opensource.org/licenses/mit-license.html)
