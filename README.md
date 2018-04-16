@@ -131,8 +131,8 @@ Welcome to react-native-coachmarks! It helps you easily create Coach Marks to en
 | **tooltipPosition**  | position of tooltip  |None  |
 | **style**  | style of CoachMark  |None  |
 
-# Example
-[react-native-coachmarks-example](https://github.com/TranLuongTuanAnh/react-native-coachmarks/blob/master/Example/DemoCoachMark/App.js)
+# Demo Project (for iphone SE)
+[react-native-coachmarks-example](https://github.com/TranLuongTuanAnh/react-native-coachmarks/blob/master/Example/DemoCoachMark)
 
 # License
 This project is licenced under the [MIT License.](https://opensource.org/licenses/mit-license.html)
