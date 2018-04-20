@@ -9,6 +9,7 @@ import {
   Dimensions,
   TouchableOpacity,
   Button,
+  LayoutAnimation,
 } from 'react-native';
 
 import PropTypes from 'prop-types';
@@ -78,11 +79,13 @@ export default class CoachMarks extends Component {
   }
 
   dismiss() {
+    LayoutAnimation.easeInEaseOut();
     this.setState({ isEnding: true });
     this.props.onClose();
   }
 
   startTutorial() {
+    LayoutAnimation.easeInEaseOut();
     this.setState({ isStarting: true });
     this.startCoachMarks();
   }

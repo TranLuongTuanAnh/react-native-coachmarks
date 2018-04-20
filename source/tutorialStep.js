@@ -25,10 +25,6 @@ export default class TurtorialStep extends Component {
     isCircleMask: true,
   };
 
-  componentWillUpdate() {
-    LayoutAnimation.easeInEaseOut();
-  }
-
   render() {
     const {
       tooltip, visible, position, tooltipPosition, okEnable, onPressMark, endModal, isCircleMask,
