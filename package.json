@@ -12,7 +12,8 @@
     "url": "https://github.com/TranLuongTuanAnh/react-native-coachmasks"
   },
   "keywords": [
-    "react-native-coachmark"
+    "react-native-coachmark",
+    "react-native instructional overlays"
   ],
   "license": "MIT",
   "devDependencies": {
