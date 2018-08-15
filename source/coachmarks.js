@@ -27,6 +27,7 @@ export default class CoachMarks extends Component {
     congratsText: PropTypes.string,
     congratsImage: PropTypes.number,
     onClose: PropTypes.func,
+    skipCongrats: PropTypes.bool,
   }
 
   state = {
@@ -40,7 +41,6 @@ export default class CoachMarks extends Component {
   }
 
   render() {
-    console.log(this.props.congratsImageUri);
     return (
       <Modal
         animationType="fade"
@@ -95,7 +95,11 @@ export default class CoachMarks extends Component {
     for (let i = 0; i < this.props.numberOfSteps; i++) {
       states.push(0);
     }
-    this.setState({ stepStates: states });
+    this.setState({ stepStates: states, isStarting: Boolean(this.props.skipCongrats) }, () => {
+      if (this.props.skipCongrats) {
+        this.startTutorial()
+      }
+    });
   }
 
   startCoachMarks() {
