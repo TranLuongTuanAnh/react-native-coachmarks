@@ -25,6 +25,8 @@ export default class CoachMarks extends Component {
     coachMarks: PropTypes.array,
     visible: PropTypes.bool,
     congratsText: PropTypes.string,
+    startButtonText: PropTypes.string,
+    skipButtonText: PropTypes.string,
     congratsImage: PropTypes.number,
     onClose: PropTypes.func,
     skipCongrats: PropTypes.bool,
@@ -64,11 +66,11 @@ export default class CoachMarks extends Component {
                 <Text style={styles.centeringTxt}>{this.props.congratsText}</Text>
                 <View style={styles.divider}/>
                 <View style = {styles.button}>
-                  <Button title="startTutorial" onPress={() => this.startTutorial()} />
+                  <Button title={this.props.startButtonText} onPress={() => this.startTutorial()} />
                 </View>
               </View>
               <View style={styles.skipScene}>
-                <Button title="skipTutorial" onPress={() => this.dismiss()} />
+                <Button title={this.props.skipButtonText} onPress={() => this.dismiss()} />
               </View>
             </View>
           </View>
