@@ -98,6 +98,8 @@ Welcome to react-native-coachmarks! It helps you easily create Coach Marks to en
 | **numberOfSteps**  | number of steps  | None  |
 | **congratsText**  | The text is shown in first view | None  |
 | **congratsImage**  | The image is shown in first view | None  |
+| **startButtonText**  | Start button text shown in first view | None  |
+| **skipButtonText**  | Skip button text shown in first view | None  |
 | **visible**  | CoachMarks is shown or hidden | false  |
 | **onClose**  | action is called in last step | None  |
 
